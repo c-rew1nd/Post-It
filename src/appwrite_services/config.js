@@ -99,7 +99,6 @@ export class Service{
             return false
         }
     }
-
     async deleteFile(fileId){
         try {
             await this.bucket.deleteFile(
@@ -118,14 +117,13 @@ export class Service{
             fileId
         )
     }
-
     getFileDownload(fileId){        
         return this.bucket.getFileDownload(
             conf.appwriteBucketId,
             fileId
         )
     }
-    
+
 }
 
 const service = new Service();
