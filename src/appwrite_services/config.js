@@ -112,6 +112,20 @@ export class Service{
             return false
         }
     }
+    getFilePreview(fileId){
+        return this.bucket.getFilePreview(
+            conf.appwriteBucketId,
+            fileId
+        )
+    }
+
+    getFileDownload(fileId){        
+        return this.bucket.getFileDownload(
+            conf.appwriteBucketId,
+            fileId
+        )
+    }
+    
 }
 
 const service = new Service();
