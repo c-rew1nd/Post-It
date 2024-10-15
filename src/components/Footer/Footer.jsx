@@ -138,6 +138,6 @@ function Footer() {
             </div>
         </section>
   )
-}
+}  // completed footer.jsx
 
 export default Footer
