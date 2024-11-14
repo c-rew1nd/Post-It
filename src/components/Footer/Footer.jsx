@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Logo from '../Logo'
 
 function Footer() {
@@ -138,6 +138,6 @@ function Footer() {
             </div>
         </section>
   )
-}  // completed footer.jsx
+}
 
 export default Footer
