@@ -15,13 +15,11 @@ function Login() {
     const login = async(data) => {
         setError("")
         try {
-            const clearSession = await authService.logout()
             const session = await authService.login(data)
             if (session) {
                 const userData = await authService.getCurrentUser()
                 if(userData) dispatch(authLogin(userData));
                 navigate("/")
-            
             }
         } catch (error) {
             setError(error.message)
